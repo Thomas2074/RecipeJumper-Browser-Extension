@@ -1,4 +1,4 @@
-# 🍳 RecipeJumper
+# RecipeJumper
 
 **Skip the life story. Jump straight to the recipe.**
 
@@ -7,14 +7,14 @@ detects the recipe on any page and lets you jump to it instantly — with one
 click, a keyboard shortcut, or the right-click menu. No bundler, no tracking,
 no accounts.
 
-- ⚡ **One-click jump** via a floating button that only appears when a recipe is found
-- ⌨️ **Keyboard shortcut** (`Alt+Shift+R` by default, fully customizable)
-- 🖱️ **Right-click** → *Jump to Recipe*, or *Set this section as the recipe* for stubborn pages
-- 🧭 **Multi-recipe aware** — roundup posts show a pick-list
-- 🎨 **Light / dark / auto theme**, configurable button position
-- 🚫 **Per-site exclusions** with wildcard support
-- ♿ **Accessible** — keyboard navigable, focus-managed, screen-reader friendly, honors reduced-motion
-- 🔒 **No network calls, no analytics** — everything runs locally
+- **One-click jump** via a floating button that only appears when a recipe is found
+- **Keyboard shortcut** (`Alt+Shift+R` by default, fully customizable)
+- **Right-click** → *Jump to Recipe*, or *Set this section as the recipe* for stubborn pages
+- **Multi-recipe aware** — roundup posts show a pick-list
+- **Light / dark / auto theme**, configurable button position
+- **Per-site exclusions** with wildcard support
+- **Accessible** — keyboard navigable, focus-managed, screen-reader friendly, honors reduced-motion
+- **No network calls, no analytics** — everything runs locally
 
 ---
 
