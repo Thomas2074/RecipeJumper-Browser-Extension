@@ -1,0 +1,25 @@
+{
+  "name": "recipejumper",
+  "version": "1.0.0",
+  "description": "A lightweight cross-browser extension that jumps you straight to the recipe on any page.",
+  "private": true,
+  "author": "deltaclint",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "web-ext lint --source-dir=src",
+    "start:firefox": "web-ext run --source-dir=src",
+    "build:firefox": "web-ext build --source-dir=src --artifacts-dir=dist --overwrite-dest",
+    "build": "powershell -ExecutionPolicy Bypass -File scripts/build.ps1",
+    "serve": "powershell -ExecutionPolicy Bypass -File scripts/serve.ps1 8080"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "web-ext": "^8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": ["**/test/**/*.test.js"]
+  }
+}

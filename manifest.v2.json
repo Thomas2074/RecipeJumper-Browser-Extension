@@ -1,0 +1,52 @@
+{
+  "//": "Legacy Manifest V2 variant for older Firefox/Safari builds. MV3 (src/manifest.json) is the primary, recommended manifest and is fully supported by current Chrome, Firefox, and Safari. To build the legacy package, copy this file over src/manifest.json (the build script can do this for you).",
+  "manifest_version": 2,
+  "name": "RecipeJumper",
+  "version": "1.0.0",
+  "description": "Skip the life story. Jump straight to the recipe on any page with one click or a keyboard shortcut.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_action": {
+    "default_title": "Jump to Recipe",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/settings.js", "lib/detector.js", "content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["storage", "contextMenus", "activeTab", "<all_urls>"],
+  "commands": {
+    "jump_to_recipe": {
+      "suggested_key": { "default": "Alt+Shift+R" },
+      "description": "Jump to the recipe on the current page"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "recipejumper@deltaclint.dev",
+      "strict_min_version": "78.0"
+    }
+  }
+}
