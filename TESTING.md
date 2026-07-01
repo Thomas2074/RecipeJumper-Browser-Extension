@@ -35,12 +35,10 @@ Driven against [`test/e2e-demo.html`](test/e2e-demo.html) (single recipe) and
 | Floating button renders in Shadow DOM | ✅ | `#recipejumper-root` + `.rj-fab` present, no style bleed |
 | Single recipe → exactly 1 candidate | ✅ | `[{plugin, "Grandma's Famous Cinnamon Rolls", score 13}]` |
 | Own UI not mis-detected as a recipe | ✅ | fixed `[id*='recipe']` matching `recipejumper-root`; observer ignores own DOM |
-| Click button → scroll to recipe | ✅ | `scrollTo top=5171` == expected; lands with 12px offset |
+| Click button → scroll to recipe | ✅ | `scrollTo top=622` == expected; lands with 12px offset |
 | Post-jump highlight applied | ✅ | `.rj-highlight` added to recipe element |
-| Multi-recipe → button shows pick state | ✅ | label "2 recipes found — choose one" |
-| Menu opens with named items + focus mgmt | ✅ | 2 items, `aria-expanded=true`, focus on first item |
-| Keyboard nav (↓ wraps, Esc closes → focus FAB) | ✅ | all transitions correct |
-| Menu item → jumps to that recipe | ✅ | 2nd item scrolls to `top=1632` == expected |
+| One click, no menu (single label) | ✅ | button always reads "Jump to Recipe"; no `.rj-menu` in DOM |
+| Roundup page → one click to best | ✅ | 2 recipes detected, click jumps straight to top-scored (`top=765`), no menu opens |
 | In-page shortcut `Alt+Shift+R` | ✅ | triggers jump to correct position |
 | Wrong combo ignored | ✅ | plain `R` does nothing |
 | Shortcut ignored while typing in a field | ✅ | keydown in `<input>` does nothing |
