@@ -1,4 +1,4 @@
-# 🍳 RecipeJumper
+# RecipeJumper
 
 **Skip the life story. Jump straight to the recipe.**
 
@@ -7,13 +7,13 @@ detects the recipe on any page and lets you jump to it instantly — with one
 click, a keyboard shortcut, or the right-click menu. No bundler, no tracking,
 no accounts.
 
-- ⚡ **One-click jump** via a floating button that only appears when a recipe is found — always goes straight to the best-matched recipe, no menus
-- ⌨️ **Keyboard shortcut** (`Alt+Shift+R` by default, fully customizable)
-- 🖱️ **Right-click** → *Jump to Recipe*, or *Set this section as the recipe* for stubborn pages
-- 🎨 **Light / dark / auto theme**, configurable button position
-- 🚫 **Per-site exclusions** with wildcard support
-- ♿ **Accessible** — keyboard navigable, focus-managed, screen-reader friendly, honors reduced-motion
-- 🔒 **No network calls, no analytics** — everything runs locally
+- **One-click jump** via a floating button that only appears when a recipe is found — always goes straight to the best-matched recipe, no menus
+- **Keyboard shortcut** (`Alt+Shift+R` by default, fully customizable)
+- **Right-click** → *Jump to Recipe*, or *Set this section as the recipe* for stubborn pages
+- **Light / dark / auto theme**, configurable button position
+- **Per-site exclusions** with wildcard support
+- **Accessible** — keyboard navigable, focus-managed, screen-reader friendly, honors reduced-motion
+- **No network calls, no analytics** — everything runs locally
 
 ---
 
@@ -67,7 +67,7 @@ This produces an Xcode project; build & run it, then enable the extension in
 
 | Action | How |
 | --- | --- |
-| Jump to recipe | Click the floating 🔽 button, or press `Alt+Shift+R` |
+| Jump to recipe | Click the floating down-arrow button, or press `Alt+Shift+R` |
 | Jump from anywhere | Right-click → **Jump to Recipe** |
 | Fix a missed recipe | Right-click the recipe heading → **Set this section as the recipe** (remembered per page) |
 | Settings | Click the toolbar icon → **All settings** |
